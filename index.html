@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Gadget</title>
+    <script type="module" crossorigin src="/assets/index-DYFsHHRp.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CvmPnZbY.css">
+  </head>
+  
+  
+  <body>
+    <button id="start-button">Start</button>
+    
+    <div id="map-label">mapping</div>
+    
+    <div id="mappable-notes">
+      <select id="note" size="12">
+        <option value="C">C</option>
+        <option value="C#">C#</option>
+        <option value="D">D</option>
+        <option value="D#">D#</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="F#">F#</option>
+        <option value="G">G</option>
+        <option value="G#">G#</option>
+        <option value="A">A</option>
+        <option value="A#">A#</option>
+        <option value="B">B</option>
+      </select>
+      
+      <select id="octave" size="12">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      
+      <div>
+        <label>
+          This mapping:
+          <input type="text" id="mapping-name" />
+          
+          <datalist id="mapping-list">
+            <option value="primary">primary</option>
+          </datalist>
+        </label>
+        
+        <button id="save-button">Save</button>
+      </div>
+    </div>
+    
+    <div id="mapping">
+      <div>
+        <span data-key="`">`</span>
+        <span data-key="1">1</span>
+        <span data-key="2">2</span>
+        <span data-key="3">3</span>
+        <span data-key="4">4</span>
+        <span data-key="5">5</span>
+        <span data-key="6">6</span>
+        <span data-key="7">7</span>
+        <span data-key="8">8</span>
+        <span data-key="9">9</span>
+        <span data-key="0">0</span>
+        <span data-key="-">-</span>
+        <span data-key="=">=</span>
+        <span data-key="Backspace">bk</span>
+      </div>
+      
+      <div>
+        <span data-key="q">Q</span>
+        <span data-key="w">W</span>
+        <span data-key="e">E</span>
+        <span data-key="r">R</span>
+        <span data-key="t">T</span>
+        <span data-key="y">Y</span>
+        <span data-key="u">U</span>
+        <span data-key="i">I</span>
+        <span data-key="o">O</span>
+        <span data-key="p">P</span>
+        <span data-key="[">[</span>
+        <span data-key="]">]</span>
+        <span data-key="\">\</span>
+      </div>
+      
+      <div>
+        <span data-key="a">A</span>
+        <span data-key="s">S</span>
+        <span data-key="d">D</span>
+        <span data-key="f">F</span>
+        <span data-key="g">G</span>
+        <span data-key="h">H</span>
+        <span data-key="j">J</span>
+        <span data-key="k">K</span>
+        <span data-key="l">L</span>
+        <span data-key=";">;</span>
+        <span data-key="'">'</span>
+      </div>
+      
+      <div>
+        <span data-key="z">Z</span>
+        <span data-key="x">X</span>
+        <span data-key="c">C</span>
+        <span data-key="v">V</span>
+        <span data-key="b">B</span>
+        <span data-key="n">N</span>
+        <span data-key="m">M</span>
+        <span data-key=",">,</span>
+        <span data-key=".">.</span>
+        <span data-key="/">/</span>
+      </div>
+    </div>
+    
+    <footer>
+      <label for="current-key">Current Key
+        <select id="current-key">
+          <option value="C">C</option>
+          <option value="C#">C#</option>
+          <option value="D">D</option>
+          <option value="D#">D#</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+          <option value="F#">F#</option>
+          <option value="G">G</option>
+          <option value="G#">G#</option>
+          <option value="A">A</option>
+          <option value="A#">A#</option>
+          <option value="B">B</option>
+        </select>
+      </label>
+      
+      <!-- <div>
+        Current notes: <span id="current-notes">None</span>
+      </div> -->
+      
+      <div>
+        Select a mapping:
+        
+        <select id="current-mapping">
+          <option value="">new</option>
+        </select>
+      </div>
+    </footer>
+  </body>
+</html>
